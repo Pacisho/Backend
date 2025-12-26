@@ -12,6 +12,10 @@ const options = {
     },
     servers: [
       {
+        url: "/", // ✅ ใช้ Relative Path (แนะนำสุด จะใช้ได้ทั้ง dev และ prod)
+        description: "Current Server",
+      },
+      {
         url: "http://localhost:3000",
         description: "Local server",
       },
