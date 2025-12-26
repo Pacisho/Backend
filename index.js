@@ -2,7 +2,6 @@ const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
 const pool = require("./config/db");
-
 const { swaggerUi, specs } = require("./swagger");
 
 // Routes
@@ -11,7 +10,6 @@ const authRoutes = require("./routes/authRoutes");
 const customerRoutes = require("./routes/customerRoutes");
 const menuRoutes = require("./routes/menuRoutes");
 const orderRoutes = require("./routes/orderRoutes");
-
 const app = express();
 
 dotenv.config();
